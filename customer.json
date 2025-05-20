@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/FTravaglini-crif/CrifDataModel/customer",
+  "$id": "https://github.com/FTravaglini-crif/CrifDataModel/blob/main/customer.json",
   "title": "Customer",
   "$comment": "Description of the customer",
   "type": "object",
