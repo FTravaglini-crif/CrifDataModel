@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/FTravaglini-crif/CrifDataModel/customer",
+  "title": "Customer",
+  "$comment": "Description of the customer",
+  "type": "object",
+  "required": [
+    "customerType"
+  ],
+  "properties": {
+    "VATNumber": {
+      "type": "string"
+    },
+    "customerType": {
+      "type": "string",
+      "enum": [
+        "INDIVIDUAL",
+        "LEGAL_ENTITY"
+      ]
+    },
+    "fiscalCode": {
+      "type": "string"
+    }
+  },
+  "patternProperties": {
+    "^extension$": {
+      "type": "object"
+    }
+  }
+}
